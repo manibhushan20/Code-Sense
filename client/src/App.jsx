@@ -34,7 +34,7 @@ function App() {
     try {
       setIsLoading(true);
       setError(null);
-      const response = await axios.post("https://code-sense-backend.onrender.com", {
+      const response = await axios.post("https://code-sense-backend.onrender.com/ai/get-review", {
         code,
       });
       setReview(response.data);
